@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DigitalFare'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Digital fare is a wrapper library helps user calculate price for driver'
 
 # This description is used to generate tags and improve search results.
