@@ -1,0 +1,16 @@
+PODS:
+  - DigitalFare (0.1.0)
+
+DEPENDENCIES:
+  - DigitalFare (from `../`)
+
+EXTERNAL SOURCES:
+  DigitalFare:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DigitalFare: 283fece0c172799e2cf0280bcec3cf3cf7991e99
+
+PODFILE CHECKSUM: d1bbe3c5ecebebdc530ff69b637bf595dce0722c
+
+COCOAPODS: 1.8.4

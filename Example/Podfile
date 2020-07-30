@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DigitalFare_Example' do
+  pod 'DigitalFare', :path => '../'
+
+  target 'DigitalFare_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

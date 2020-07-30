@@ -1,0 +1,22 @@
+{
+  "name": "DigitalFare",
+  "version": "0.1.0",
+  "summary": "A short description of DigitalFare.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Nguyen Quoc Vuong/DigitalFare",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Nguyen Quoc Vuong": "nguyen_quocvuong@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Nguyen Quoc Vuong/DigitalFare.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DigitalFare/Classes/**/*"
+}
