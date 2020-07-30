@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 
 public class Utils {
-    static func getDistance(listCLLocation2D: [CLLocationCoordinate2D]) -> Double {
+    public static func getDistance(listCLLocation2D: [CLLocationCoordinate2D]) -> Double {
         var distance: Double = 0
         if listCLLocation2D.count < 2 { return 0 }
         for index in 0...(listCLLocation2D.count - 2) {
@@ -23,7 +23,7 @@ public class Utils {
         return distance
     }
     
-    static func getPrice(from distance: Double, config: Settings, isRoundedToThousand: Bool = false) -> Double {
+    public static func getPrice(from distance: Double, config: Settings, isRoundedToThousand: Bool = false) -> Double {
         var price:Double = config.firstPrice
         var distanceRemainting = distance - 300
         if distance <= 300 {
@@ -58,7 +58,7 @@ public class Utils {
         return price
     }
     
-    static func polyLine(with encodedString: String) -> [CLLocationCoordinate2D] {
+    public static func polyLine(with encodedString: String) -> [CLLocationCoordinate2D] {
         var myRoutePoints=[CLLocationCoordinate2D]()
         let bytes = (encodedString as NSString).utf8String
         var idx: Int = 0

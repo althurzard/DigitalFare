@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DigitalFare
 
 class ViewController: UIViewController {
 

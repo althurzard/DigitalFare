@@ -9,7 +9,7 @@ import Foundation
 import ObjectMapper
 import CoreLocation
 public struct GeocodingResponse: Mappable {
-    var results: [GeocodingResult] = []
+    public var results: [GeocodingResult] = []
     
     public init?(map: Map) {
         mapping(map: map)
@@ -26,9 +26,9 @@ public struct GeocodingResult: Mappable {
         mapping(map: map)
     }
     
-    var formattedAddress: String?
-    var placeId: String?
-    var location: Location?
+    public var formattedAddress: String?
+    public var placeId: String?
+    public var location: Location?
     
     public mutating func mapping(map: Map) {
       

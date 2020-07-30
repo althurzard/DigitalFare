@@ -1,16 +1,46 @@
 PODS:
-  - DigitalFare (0.1.0)
+  - Alamofire (5.0.0-rc.2)
+  - AlamofireObjectMapper (6.2.0):
+    - Alamofire (= 5.0.0-rc.2)
+    - ObjectMapper (~> 3.5.1)
+  - DigitalFare (1.0.2):
+    - Alamofire (= 5.0.0-rc.2)
+    - AlamofireObjectMapper (= 6.2.0)
+    - GoogleMaps
+    - GooglePlaces
+    - ObjectMapper (~> 3.5.1)
+  - GoogleMaps (3.9.0):
+    - GoogleMaps/Maps (= 3.9.0)
+  - GoogleMaps/Base (3.9.0)
+  - GoogleMaps/Maps (3.9.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.9.0):
+    - GoogleMaps/Base (= 3.9.0)
+  - ObjectMapper (3.5.3)
 
 DEPENDENCIES:
   - DigitalFare (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireObjectMapper
+    - GoogleMaps
+    - GooglePlaces
+    - ObjectMapper
 
 EXTERNAL SOURCES:
   DigitalFare:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DigitalFare: 283fece0c172799e2cf0280bcec3cf3cf7991e99
+  Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
+  AlamofireObjectMapper: 74d1440c92c42bbcc2b5f4dc81654ac095ec669f
+  DigitalFare: e8e0d2f285c21fa6aea1397a7e613e16acb39b58
+  GoogleMaps: 4b5346bddfe6911bb89155d43c903020170523ac
+  GooglePlaces: 1634d019549b969d40fe0ccb0b9513055adebe01
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
 
-PODFILE CHECKSUM: d1bbe3c5ecebebdc530ff69b637bf595dce0722c
+PODFILE CHECKSUM: 865c288426a1171bf017b26e9600727ff46d4867
 
 COCOAPODS: 1.8.4

@@ -11,9 +11,9 @@ import CoreLocation
 
 public struct Place: Mappable {
     
-    var location: Location?
-    var originalIndex: Int?
-    var placedID: String?
+    public var location: Location?
+    public var originalIndex: Int?
+    public var placedID: String?
     
     public init?(map: Map) {
         mapping(map: map)

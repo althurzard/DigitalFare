@@ -10,7 +10,7 @@ import ObjectMapper
 
 
 public struct Route: Mappable {
-    var overviewPolyline : String?
+    public var overviewPolyline : String?
     public init?(map: Map) {
         mapping(map: map)
     }

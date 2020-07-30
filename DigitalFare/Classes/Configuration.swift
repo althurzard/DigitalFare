@@ -9,12 +9,12 @@ import Foundation
 
 
 public class DigitalFare {
-    static let shared = DigitalFare()
+    public static let shared = DigitalFare()
     private init() { }
     
-    var settings = Settings()
+    public var settings = Settings()
     
-    var apiKey = APIKey()
-    var host = HostService()
+    public var apiKey = APIKey()
+    public var host = HostService()
     
 }

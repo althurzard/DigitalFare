@@ -13,7 +13,7 @@ import AlamofireObjectMapper
 import CoreLocation
 
 public class APIService {
-    static func getInfo(listLocation: [CLLocationCoordinate2D], interpolate: Bool, indexCall: Int, done: @escaping(_ result: SnappedPoint?,_ errorString: String?, _ indexCall: Int) -> ()) {
+    public static func getInfo(listLocation: [CLLocationCoordinate2D], interpolate: Bool, indexCall: Int, done: @escaping(_ result: SnappedPoint?,_ errorString: String?, _ indexCall: Int) -> ()) {
         let router = Router.snapToRoad(location: listLocation, interpolate: interpolate)
         
         AF.request(router).responseObject { (response: DataResponse<SnappedPoint,AFError>) in
@@ -26,7 +26,7 @@ public class APIService {
         }
     }
     
-    static func getDirection(startLocation: CLLocationCoordinate2D, stopLocation: CLLocationCoordinate2D, done: @escaping(_ result: DirectionResponse?, _ errorString: String?) -> ()) {
+    public static func getDirection(startLocation: CLLocationCoordinate2D, stopLocation: CLLocationCoordinate2D, done: @escaping(_ result: DirectionResponse?, _ errorString: String?) -> ()) {
         let router = Router.directions(startLocation: startLocation, stopLocation: stopLocation)
         AF.request(router).responseObject { (response: DataResponse<DirectionResponse, AFError>) in
             switch response.result {
@@ -39,7 +39,7 @@ public class APIService {
         }
     }
     
-    static func getGeocoding(address: String, done: @escaping(_ result: GeocodingResponse?,_ errorString: String?) -> ()) {
+    public static func getGeocoding(address: String, done: @escaping(_ result: GeocodingResponse?,_ errorString: String?) -> ()) {
         let router = Router.addressToCoordidate(address: address)
         AF.request(router).responseObject { (response: DataResponse<GeocodingResponse,AFError>) in
                        switch response.result {

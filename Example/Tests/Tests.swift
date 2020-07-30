@@ -1,5 +1,5 @@
 import XCTest
-import DigitalFare
+
 
 class Tests: XCTestCase {
     

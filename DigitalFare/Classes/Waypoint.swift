@@ -9,9 +9,9 @@ import Foundation
 import ObjectMapper
 
 public struct Waypoint: Mappable {
-    var geoCoderStatus : String?
-    var placeId        : String?
-    var types          : [String]?
+    public var geoCoderStatus : String?
+    public var placeId        : String?
+    public var types          : [String]?
     
     public init?(map: Map) {
         mapping(map: map)

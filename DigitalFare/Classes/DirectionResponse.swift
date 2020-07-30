@@ -9,9 +9,9 @@ import Foundation
 import ObjectMapper
 
 public struct DirectionResponse: Mappable {
-    var geocodedWaypoints   : [Waypoint]?
-    var routes              : [Route]?
-    var status              : String?
+    public var geocodedWaypoints   : [Waypoint]?
+    public var routes              : [Route]?
+    public var status              : String?
     public init?(map: Map) {
         mapping(map: map)
     }

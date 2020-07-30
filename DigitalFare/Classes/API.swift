@@ -8,11 +8,11 @@
 import Foundation
 
 
-struct APIKey {
+public struct APIKey {
     var googleMap = ""
     var googleSpeech = ""
 }
 
-struct HostService {
+public struct HostService {
     var speech = "speech.googleapis.com"
 }

@@ -10,8 +10,8 @@ import ObjectMapper
 import CoreLocation
 
 public struct Location: Mappable {
-    var lat: Double?
-    var lng: Double?
+    public var lat: Double?
+    public var lng: Double?
     var to2DLocation: CLLocationCoordinate2D {
         var object: CLLocationCoordinate2D = CLLocationCoordinate2D()
         object.latitude = self.lat ?? 0

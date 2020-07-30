@@ -9,18 +9,18 @@ import Foundation
 import ObjectMapper
 import CoreLocation
 
-struct SnappedPoint: Mappable {
-    var places: [Place]?
+public struct SnappedPoint: Mappable {
+    public var places: [Place]?
     
-    init?(map: Map) {
+    public init?(map: Map) {
         mapping(map: map)
     }
     
-    mutating func mapping(map: Map) {
+    public mutating func mapping(map: Map) {
         places <- map["snappedPoints"]
     }
     
-    func getList2DLocation() -> [CLLocationCoordinate2D] {
+    public func getList2DLocation() -> [CLLocationCoordinate2D] {
         var listLocation : [CLLocationCoordinate2D] = []
         if let places = places {
             for item in places {
