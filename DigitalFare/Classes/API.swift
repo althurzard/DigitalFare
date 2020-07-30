@@ -9,10 +9,10 @@ import Foundation
 
 
 public struct APIKey {
-    var googleMap = ""
-    var googleSpeech = ""
+    public var googleMap = ""
+    public var googleSpeech = ""
 }
 
 public struct HostService {
-    var speech = "speech.googleapis.com"
+    public var speech = "speech.googleapis.com"
 }
