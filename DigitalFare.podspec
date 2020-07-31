@@ -44,4 +44,5 @@ Pod::Spec.new do |s|
   s.dependency 'Alamofire', '= 5.0.0-rc.2'
   s.dependency 'ObjectMapper', '~> 3.5.1'
   s.dependency 'AlamofireObjectMapper', '= 6.2.0'
+  s.dependency 'DigitalFareUtils'
 end

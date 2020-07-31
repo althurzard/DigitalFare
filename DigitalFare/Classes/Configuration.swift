@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import DigitalFareUtils
 
 public class DigitalFare {
     public static let shared = DigitalFare()

@@ -3,12 +3,14 @@ PODS:
   - AlamofireObjectMapper (6.2.0):
     - Alamofire (= 5.0.0-rc.2)
     - ObjectMapper (~> 3.5.1)
-  - DigitalFare (1.0.2):
+  - DigitalFare (1.0.4):
     - Alamofire (= 5.0.0-rc.2)
     - AlamofireObjectMapper (= 6.2.0)
+    - DigitalFareUtils
     - GoogleMaps
     - GooglePlaces
     - ObjectMapper (~> 3.5.1)
+  - DigitalFareUtils (0.0.1)
   - GoogleMaps (3.9.0):
     - GoogleMaps/Maps (= 3.9.0)
   - GoogleMaps/Base (3.9.0)
@@ -25,6 +27,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireObjectMapper
+    - DigitalFareUtils
     - GoogleMaps
     - GooglePlaces
     - ObjectMapper
@@ -36,7 +39,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
   AlamofireObjectMapper: 74d1440c92c42bbcc2b5f4dc81654ac095ec669f
-  DigitalFare: e8e0d2f285c21fa6aea1397a7e613e16acb39b58
+  DigitalFare: 717c47f69f900dd369e4e1228607d3c609ec53dd
+  DigitalFareUtils: 7aa3ff862306ce0fc78662461dbee9fbbc178612
   GoogleMaps: 4b5346bddfe6911bb89155d43c903020170523ac
   GooglePlaces: 1634d019549b969d40fe0ccb0b9513055adebe01
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37

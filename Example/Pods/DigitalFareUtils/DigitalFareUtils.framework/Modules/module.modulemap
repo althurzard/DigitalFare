@@ -1,0 +1,11 @@
+framework module DigitalFareUtils {
+  umbrella header "DigitalFareUtils.h"
+
+  export *
+  module * { export * }
+}
+
+module DigitalFareUtils.Swift {
+    header "DigitalFareUtils-Swift.h"
+    requires objc
+}
