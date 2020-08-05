@@ -21,7 +21,7 @@ public class DFService {
             name: "https://roads.googleapis.com/v1/snapToRoads",
             params: ["path": pathString,
                      "interpolate": interpolate,
-                     "key": DigitalFare.shared.apiKey],
+                     "key": DigitalFare.shared.apiKey.googleMap],
             requestType: .get)
         
         APIService.request(input: input, output: DFOutputService.self, completion: completion)
@@ -32,7 +32,7 @@ public class DFService {
             name: "https://maps.googleapis.com/maps/api/directions/json",
             params: ["origin": "\(startLocation.lat ?? 0),\(startLocation.lng ?? 0)",
                      "destination": "\(stopLocation.lat ?? 0),\(stopLocation.lng ?? 0)",
-                     "key": DigitalFare.shared.apiKey],
+                     "key": DigitalFare.shared.apiKey.googleMap],
             requestType: .get)
         APIService.request(input: input, output: DFOutputService.self, completion: completion)
     }
@@ -41,7 +41,7 @@ public class DFService {
         let input = DFInputService(
             name: "https://maps.googleapis.com/maps/api/geocode/json",
             params: ["address": address,
-                     "key": DigitalFare.shared.apiKey],
+                     "key": DigitalFare.shared.apiKey.googleMap],
             requestType: .get)
         APIService.request(input: input, output: DFOutputService.self, completion: completion)
     }
