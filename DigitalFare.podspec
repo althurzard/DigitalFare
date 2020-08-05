@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DigitalFare'
-  s.version          = '1.0.5'
+  s.version          = '1.0.6'
   s.summary          = 'Digital fare is a wrapper library helps user calculate price for driver'
 
 # This description is used to generate tags and improve search results.
@@ -41,8 +41,6 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.dependency 'GoogleMaps'
   s.dependency 'GooglePlaces'
-  s.dependency 'Alamofire', '= 5.0.0-rc.2'
-  s.dependency 'ObjectMapper', '~> 3.5.1'
-  s.dependency 'AlamofireObjectMapper', '= 6.2.0'
+  s.dependency 'CPAPIService', '~> 0.2.1'
   s.dependency 'DigitalFareUtils'
 end

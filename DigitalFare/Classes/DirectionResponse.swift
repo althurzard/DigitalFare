@@ -6,19 +6,16 @@
 //
 
 import Foundation
-import ObjectMapper
+import CPAPIService
 
-public struct DirectionResponse: Mappable {
+public struct DirectionResponse: BaseModel {
     public var geocodedWaypoints   : [Waypoint]?
     public var routes              : [Route]?
     public var status              : String?
-    public init?(map: Map) {
-        mapping(map: map)
-    }
     
-    public mutating func mapping(map: Map) {
-        geocodedWaypoints   <- map["geocoded_waypoints"]
-        routes              <- map["routes"]
-        status              <- map["status"]
+    enum CodingKeys: String, CodingKey {
+        case geocodedWaypoints = "geocoded_waypoints"
+        case routes
+        case status
     }
 }

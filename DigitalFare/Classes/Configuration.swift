@@ -15,6 +15,5 @@ public class DigitalFare {
     public var settings = Settings()
     
     public var apiKey = APIKey()
-    public var host = HostService()
     
 }

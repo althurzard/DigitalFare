@@ -6,18 +6,14 @@
 //
 
 import Foundation
-import ObjectMapper
+import CPAPIService
 import CoreLocation
 
-public struct SnappedPoint: Mappable {
+public struct SnappedPoint: BaseModel {
     public var places: [Place]?
     
-    public init?(map: Map) {
-        mapping(map: map)
-    }
-    
-    public mutating func mapping(map: Map) {
-        places <- map["snappedPoints"]
+    enum CodingKeys: String, CodingKey {
+        case places = "snappedPoints"
     }
     
     public func getList2DLocation() -> [CLLocationCoordinate2D] {
@@ -30,5 +26,9 @@ public struct SnappedPoint: Mappable {
             }
         }
         return listLocation
+    }
+    
+    public init() {
+        
     }
 }

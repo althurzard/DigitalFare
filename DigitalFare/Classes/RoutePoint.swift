@@ -6,18 +6,27 @@
 //
 
 import Foundation
-import ObjectMapper
+import CPAPIService
 
 
-public struct Route: Mappable {
+public struct Route: BaseModel {
     public var overviewPolyline : String?
-    public init?(map: Map) {
-        mapping(map: map)
+    
+    enum OverViewKeys: String, CodingKey {
+        case overview = "overview_polyline"
     }
     
-    public mutating func mapping(map: Map) {
-        overviewPolyline <- map["overview_polyline.points"]
+    enum CodingKeys: String, CodingKey {
+        case overviewPolyline = "points"
     }
-    
-    
+    public init() {}
+}
+
+
+extension Route {
+    public init(from decoder: Decoder) throws {
+        let overview = try decoder.container(keyedBy: OverViewKeys.self)
+        let overviewContainer = try overview.nestedContainer(keyedBy: CodingKeys.self, forKey: .overview)
+        overviewPolyline = try overviewContainer.decodeIfPresent(String.self, forKey: .overviewPolyline)
+    }
 }

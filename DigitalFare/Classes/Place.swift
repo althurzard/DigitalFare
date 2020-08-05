@@ -6,24 +6,14 @@
 //
 
 import Foundation
-import ObjectMapper
+import CPAPIService
 import CoreLocation
 
-public struct Place: Mappable {
+public struct Place: BaseModel {
     
     public var location: Location?
     public var originalIndex: Int?
-    public var placedID: String?
+    public var placedId: String?
     
-    public init?(map: Map) {
-        mapping(map: map)
-    }
-    
-    public mutating func mapping(map: Map) {
-        location             <- map["location"]
-        originalIndex   <- map["originalIndex"]
-        placedID        <- map["placeId"]
-    }
-    
-    
+    public init() {}
 }

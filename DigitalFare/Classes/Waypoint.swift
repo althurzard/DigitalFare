@@ -6,21 +6,20 @@
 //
 
 import Foundation
-import ObjectMapper
+import CPAPIService
 
-public struct Waypoint: Mappable {
+public struct Waypoint: BaseModel {
     public var geoCoderStatus : String?
     public var placeId        : String?
     public var types          : [String]?
     
-    public init?(map: Map) {
-        mapping(map: map)
+    enum CodingKeys: String, CodingKey{
+        case geoCoderStatus = "geocoder_status"
+        case placeId = "place_id"
+        case types
     }
     
-    public mutating func mapping(map: Map) {
-        geoCoderStatus <- map["geocoder_status"]
-        placeId        <- map["place_id"]
-        types          <- map["types"]
+    public init() {
+        
     }
-    
 }
