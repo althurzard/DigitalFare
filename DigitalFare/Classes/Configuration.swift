@@ -6,14 +6,10 @@
 //
 
 import Foundation
-import DigitalFareUtils
 
 public class DigitalFare {
     public static let shared = DigitalFare()
     private init() { }
-    
-    public var settings = Settings()
-    
     public var apiKey = APIKey()
-    
 }
+

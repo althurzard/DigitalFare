@@ -2,12 +2,10 @@ PODS:
   - Alamofire (4.8.2)
   - CPAPIService (0.2.1):
     - Alamofire (~> 4.8.0)
-  - DigitalFare (1.0.5):
+  - DigitalFare (1.0.7):
     - CPAPIService (~> 0.2.1)
-    - DigitalFareUtils
     - GoogleMaps
     - GooglePlaces
-  - DigitalFareUtils (0.0.1)
   - GoogleMaps (3.9.0):
     - GoogleMaps/Maps (= 3.9.0)
   - GoogleMaps/Base (3.9.0)
@@ -23,7 +21,6 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - CPAPIService
-    - DigitalFareUtils
     - GoogleMaps
     - GooglePlaces
 
@@ -34,8 +31,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   CPAPIService: e920987b7bd93b39a92d467acc6d714bd2f2b61a
-  DigitalFare: ee6af3e52537250c60cb85752fec02aaf8fe0d03
-  DigitalFareUtils: 7aa3ff862306ce0fc78662461dbee9fbbc178612
+  DigitalFare: f321646f16d07fc559898302cb43031a4bde18e8
   GoogleMaps: 4b5346bddfe6911bb89155d43c903020170523ac
   GooglePlaces: 1634d019549b969d40fe0ccb0b9513055adebe01
 
